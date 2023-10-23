@@ -334,12 +334,30 @@ template {
 ============= */
 body {
   background-color: var(--black);
-  color: var(--white);
+}
+
+#validation-logo {
+  margin-top: 60px;
 }
 
 /* =============
     Typography
 ============= */
+h1, h2, h3, h4, h5 {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
 /* =============
     Buttons
 ============= */
@@ -383,3 +401,7 @@ textarea {
 /* =============
     Footer
 ============= */
+footer {
+  color: var(--white);
+  padding: 80px 0px;
+}
