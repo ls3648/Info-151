@@ -405,3 +405,7 @@ footer {
   color: var(--white);
   padding: 80px 0px;
 }
+
+section h2 {
+  margin-bottom: 15px;
+}
