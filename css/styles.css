@@ -354,6 +354,24 @@ ul {
 /* =============
     Buttons
 ============= */
+button {
+  border: none;
+}
+
+.blue-btn {
+  background-color: var(--light-blue);
+  color: var(--white);
+  padding: 15px 30px;
+  border-radius: 6px;
+}
+
+.dark-blue-btn {
+  background-color: var(--light-blue);
+  color: var(--white);
+  padding: 15px 30px;
+  border-radius: 6px;
+}
+
 /* =============
     Forms
 ============= */
