@@ -14,7 +14,8 @@ html {
   --black: #000000;
   --white: #ffffff;
   --purple: #461096;
-  --light-blue: #42B4EE;
+  --light-blue: #42B4EE20;
+  --dark-blue: #42B4EE ;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -360,13 +361,13 @@ button {
 
 .blue-btn {
   background-color: var(--light-blue);
-  color: var(--white);
+  color: var(--dark-blue);
   padding: 15px 30px;
   border-radius: 6px;
 }
 
 .dark-blue-btn {
-  background-color: var(--light-blue);
+  background-color: var(--dark-blue);
   color: var(--white);
   padding: 15px 30px;
   border-radius: 6px;
