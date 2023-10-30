@@ -440,4 +440,10 @@ textarea {
 #plans ul li button {
   font-size: 1rem;
   font-weight: 500;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+}
+#plans ul li button:hover {
+  background-color: lightpink;
 }
