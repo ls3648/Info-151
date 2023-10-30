@@ -429,6 +429,7 @@ textarea {
 }
 #plans ul li {
   padding: 30px;
+  list-style: none;
 }
 #plans ul li h3 {
   font-size: 1.375rem;
