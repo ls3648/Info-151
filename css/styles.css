@@ -373,7 +373,7 @@ button {
 .blue-btn {
   background-color: var(--light-blue);
   color: var(--white);
-  padding: 10px 30px;
+  padding: 15px 30px;
   border-radius: 6px;
 }
 
@@ -404,12 +404,30 @@ textarea {
     Header
 ============= */
 #header nav ul li {
+  list-style: none;
+}
+#header nav ul li a:link, #header nav ul li a:visited {
   font-size: 1.125rem;
   font-weight: 400;
+  color: white;
+  text-decoration: none;
+  padding: 0px 20px;
+  display: inline-block;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+#header nav ul li a:hover, #header nav ul li a:active {
+  color: lightpink;
 }
 #header button {
   font-size: 1.125rem;
   font-weight: 500;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+}
+#header button:hover {
+  background-color: lightpink;
 }
 
 /* =============
@@ -433,4 +451,10 @@ textarea {
 #hero section button {
   font-size: 1.25rem;
   font-weight: 500;
+  -webkit-transform: 0.5s;
+          transform: 0.5s;
+  cursor: pointer;
+}
+#hero section button:hover {
+  background-color: lightpink;
 }
