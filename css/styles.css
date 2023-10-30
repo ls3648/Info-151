@@ -422,6 +422,11 @@ textarea {
 /* =============
     Plans
 ============= */
+#plans ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 #plans ul li {
   padding: 30px;
 }
