@@ -5,6 +5,26 @@
     ul{
         li{
             padding: 30px;
+
+            h3{
+                font-size: rem-calc(22);
+                font-weight: 500;
+            }
+
+            h1{
+                font-size: rem-calc(44);
+                font-weight: 600;
+            }
+
+            p{
+                font-size: rem-calc(16);
+                font-weight: 400;
+            }
+
+            button{
+                font-size: rem-calc(16);
+                font-weight: 500;
+            }
         }
     }
 }

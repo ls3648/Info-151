@@ -341,6 +341,10 @@ template {
 /* =============
     Typography
 ============= */
+body {
+  font-family: "Inter", sans-serif;
+}
+
 h1, h2, h3, h4, h5 {
   margin: 0;
   padding: 0;
@@ -403,6 +407,15 @@ textarea {
 /* =============
     Header
 ============= */
+#header h1 {
+  font-size: 2.75rem;
+  font-weight: 600;
+}
+#header h3 {
+  font-size: 1.375rem;
+  font-weight: 500;
+}
+
 /* =============
     Footer
 ============= */
@@ -411,4 +424,20 @@ textarea {
 ============= */
 #plans ul li {
   padding: 30px;
+}
+#plans ul li h3 {
+  font-size: 1.375rem;
+  font-weight: 500;
+}
+#plans ul li h1 {
+  font-size: 2.75rem;
+  font-weight: 600;
+}
+#plans ul li p {
+  font-size: 1rem;
+  font-weight: 400;
+}
+#plans ul li button {
+  font-size: 1rem;
+  font-weight: 500;
 }

@@ -1,3 +1,13 @@
 /* =============
     Header
 ============= */
+#header{
+    h1{
+        font-size: rem-calc(44);
+        font-weight: 600;
+    }
+    h3{
+        font-size: rem-calc(22);
+        font-weight: 500;
+    }
+}
