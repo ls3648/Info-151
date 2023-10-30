@@ -375,6 +375,13 @@ button {
   color: var(--white);
   padding: 15px 30px;
   border-radius: 6px;
+  -webkit-transform: 0.5s;
+          transform: 0.5s;
+  cursor: pointer;
+}
+
+.blue-btn:hover {
+  background-color: lightpink;
 }
 
 /* =============
@@ -403,6 +410,12 @@ textarea {
 /* =============
     Header
 ============= */
+header {
+  padding: 22px;
+  border-radius: 6px;
+  margin-top: 5px;
+}
+
 #header nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -426,6 +439,9 @@ textarea {
 }
 #header nav ul li a:hover, #header nav ul li a:active {
   color: lightpink;
+}
+#header nav ul li a.selected {
+  color: var(--light-blue);
 }
 #header button {
   font-size: 1.125rem;
@@ -452,17 +468,18 @@ textarea {
   font-size: 3.875rem;
   font-weight: 600;
 }
+#hero section #hero_title_middle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 #hero section p {
   font-size: 1.125rem;
   font-weight: 400;
+  margin-top: 20px;
 }
 #hero section button {
   font-size: 1.25rem;
   font-weight: 500;
-  -webkit-transform: 0.5s;
-          transform: 0.5s;
-  cursor: pointer;
-}
-#hero section button:hover {
-  background-color: lightpink;
+  margin-top: 35px;
 }

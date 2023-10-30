@@ -11,18 +11,22 @@
             font-size: rem-calc(62);
             font-weight: 600;
         }
+        
+        #hero_title_top{
+            
+        }
+        #hero_title_middle{
+            display: flex;
+        }
         p{
             font-size: rem-calc(18);
             font-weight: 400;
+            margin-top: 20px;
         }
         button{
             font-size: rem-calc(20);
             font-weight: 500;
-            transform: 0.5s;
-            cursor: pointer;
-        }
-        button:hover{
-            background-color: lightpink;
+            margin-top: 35px;
         }
     }
 }
