@@ -407,7 +407,7 @@ textarea {
 ============= */
 footer {
   color: var(--white);
-  padding: 80px 0px;
+  padding: 30px 0px;
 }
 
 #footer_top section p {
@@ -421,8 +421,20 @@ footer {
   font-family: "Poppins", sans-serif;
 }
 #footer_top section ul li {
+  list-style: none;
+}
+#footer_top section ul li a:link, #footer_top section ul li a:visited {
   font-size: 1.125rem;
   font-weight: 400;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  display: inline-block;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+#footer_top section ul li a:hover, #footer_top section ul li a:active {
+  color: lightpink;
 }
 #footer_top section div form {
   font-size: 1rem;
@@ -431,6 +443,12 @@ footer {
 #footer_top section div button {
   font-size: 1rem;
   font-weight: 500;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+}
+#footer_top section div button:hover {
+  background-color: lightpink;
 }
 
 #footer_bottom p {
