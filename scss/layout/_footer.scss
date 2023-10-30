@@ -4,11 +4,43 @@
 footer{
     color: var(--white);
     padding: 80px 0px;
+}
 
-
+#footer_top{
     section{
+        p{
+            font-size: rem-calc(16);
+            font-weight: 400;
+        }
         h2{
             margin-bottom: 15px;
+            font-size: rem-calc(22);
+            font-weight: 500;
+            font-family: 'Poppins', sans-serif;
         }
+        ul{
+            li{
+            font-size: rem-calc(18);
+            font-weight: 400;
+            }
+        }
+        div{
+            form{
+                font-size: rem-calc(16);
+                font-weight: 400;
+            }
+            button{
+                font-size: rem-calc(16);
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+#footer_bottom{
+    p{
+        margin-top: 30px;
+        font-size: rem-calc(18);
+        font-weight: 500;
     }
 }
