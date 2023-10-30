@@ -1,3 +1,18 @@
 /* =============
     Header
 ============= */
+#header{
+
+    nav{
+        ul{
+            li{
+                font-size: rem-calc(18);
+                font-weight: 400;
+            }
+        }
+    }
+    button{
+        font-size: rem-calc(18);
+        font-weight: 500;
+    }
+}
