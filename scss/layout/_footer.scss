@@ -43,15 +43,24 @@ footer{
             }
         }
         div{
+            display: flex;
             form{
                 font-size: rem-calc(16);
                 font-weight: 400;
+                input{
+                    border-radius: 5px 0px 0px 5px;
+                    border: 1px solid rgba(255, 255, 255, 0.50);
+                    padding: 15px 30px;
+                    background-color: black;
+                }
             }
             button{
                 font-size: rem-calc(16);
                 font-weight: 500;
                 transition: 0.5s;
+                border-radius: 0px 5px 5px 0px;
                 cursor: pointer;
+                border: 1px solid var(--light-blue);
             }
             button:hover{
                 background-color: lightpink;

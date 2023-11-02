@@ -373,7 +373,6 @@ button {
   background-color: var(--light-blue);
   color: var(--white);
   padding: 15px 30px;
-  border-radius: 6px;
 }
 
 /* =============
@@ -447,16 +446,29 @@ footer {
 #footer_top section ul li a:hover, #footer_top section ul li a:active {
   color: lightpink;
 }
+#footer_top section div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 #footer_top section div form {
   font-size: 1rem;
   font-weight: 400;
+}
+#footer_top section div form input {
+  border-radius: 5px 0px 0px 5px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  padding: 15px 30px;
+  background-color: black;
 }
 #footer_top section div button {
   font-size: 1rem;
   font-weight: 500;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  border-radius: 0px 5px 5px 0px;
   cursor: pointer;
+  border: 1px solid var(--light-blue);
 }
 #footer_top section div button:hover {
   background-color: lightpink;
