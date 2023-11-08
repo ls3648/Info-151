@@ -4,6 +4,8 @@
 #hero{
     margin-top: 100px;
     color: white;
+    display: grid;
+    grid-template-columns: 43% auto;
 
     section{
         h1{
@@ -13,20 +15,31 @@
         }
         
         #hero_title_top{
-            
+            padding-top: 60px;
         }
         #hero_title_middle{
             display: flex;
         }
-        p{
+        #latin_paragraph_top{
             font-size: rem-calc(18);
             font-weight: 400;
-            margin-top: 20px;
+            margin-top: 30px;
+            line-height: 160%;
+        }
+        #latin_paragraph_middle{
+            font-size: rem-calc(18);
+            font-weight: 400;
+            line-height: 160%;
+        }
+        #latin_paragraph_bottom{
+            font-size: rem-calc(18);
+            font-weight: 400;
+            line-height: 160%;
         }
         button{
             font-size: rem-calc(20);
             font-weight: 500;
-            margin-top: 35px;
+            margin-top: 55px;
         }
     }
 }

@@ -339,8 +339,8 @@ body {
 body main {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: auto 1170px auto;
-  grid-template-columns: auto 1170px auto;
+  -ms-grid-columns: auto 1400px auto;
+  grid-template-columns: auto 1400px auto;
       grid-template-areas: ". main-grid-item .";
 }
 body main #main-grid-item {
@@ -351,6 +351,7 @@ body main #main-grid-item {
 
 #validation-logo {
   margin-top: 60px;
+  text-align: center;
 }
 
 /* =============
@@ -433,12 +434,13 @@ header {
 }
 
 #header nav ul {
+  padding-left: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -458,6 +460,7 @@ header {
 }
 #header nav ul li a:hover, #header nav ul li a:active {
   color: lightpink;
+  text-decoration: underline;
 }
 #header nav ul li a.selected {
   color: var(--light-blue);
@@ -482,23 +485,41 @@ header {
 #hero {
   margin-top: 100px;
   color: white;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 43% auto;
+  grid-template-columns: 43% auto;
 }
 #hero section h1 {
   font-size: 3.875rem;
   font-weight: 600;
+}
+#hero section #hero_title_top {
+  padding-top: 60px;
 }
 #hero section #hero_title_middle {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-#hero section p {
+#hero section #latin_paragraph_top {
   font-size: 1.125rem;
   font-weight: 400;
-  margin-top: 20px;
+  margin-top: 30px;
+  line-height: 160%;
+}
+#hero section #latin_paragraph_middle {
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 160%;
+}
+#hero section #latin_paragraph_bottom {
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 160%;
 }
 #hero section button {
   font-size: 1.25rem;
   font-weight: 500;
-  margin-top: 35px;
+  margin-top: 55px;
 }

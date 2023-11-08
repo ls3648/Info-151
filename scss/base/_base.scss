@@ -6,7 +6,7 @@ body{
 
     main{
         display: grid;
-        grid-template-columns: auto 1170px auto;
+        grid-template-columns: auto 1400px auto;
         grid-template-areas: ". main-grid-item .";
         
         #main-grid-item{
@@ -17,4 +17,5 @@ body{
 
 #validation-logo{
     margin-top: 60px;
+    text-align: center;
 }
