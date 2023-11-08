@@ -336,6 +336,18 @@ template {
 body {
   background-color: var(--purple);
 }
+body main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 1170px auto;
+  grid-template-columns: auto 1170px auto;
+      grid-template-areas: ". main-grid-item .";
+}
+body main #main-grid-item {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: main-grid-item;
+}
 
 #validation-logo {
   margin-top: 60px;
@@ -411,9 +423,13 @@ textarea {
     Header
 ============= */
 header {
-  padding: 22px;
+  padding: 5px;
   border-radius: 6px;
-  margin-top: 5px;
+  margin-top: 50px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 30% auto;
+  grid-template-columns: 30% auto;
 }
 
 #header nav ul {
@@ -435,7 +451,7 @@ header {
   font-weight: 400;
   color: white;
   text-decoration: none;
-  padding: 0px 20px;
+  padding: 0px 25px;
   display: inline-block;
   -webkit-transition: 0.5s;
   transition: 0.5s;
