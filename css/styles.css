@@ -334,7 +334,21 @@ template {
 /* =============
     Base
 ============= */
+body main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 1400px auto;
+  grid-template-columns: auto 1400px auto;
+      grid-template-areas: ". main-content .";
+}
+body main #main-grid-item {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: main-content;
+}
+
 #validation-logo {
+  text-align: center;
   margin-top: 60px;
 }
 
@@ -405,13 +419,88 @@ textarea {
     Navigation
 ============= */
 /* =============
+    Toggle Switch
+============= */
+label {
+  border: none;
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 88px;
+  height: 33px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(66, 180, 238, 0.1254901961);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 44px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #42B4EE;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: rgba(66, 180, 238, 0.1254901961);
+}
+
+input:focus + .slider {
+  -webkit-box-shadow: 0 0 1px #42B4EE;
+          box-shadow: 0 0 1px #42B4EE;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  transform: translateX(34px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 35px;
+}
+
+.slider.round:before {
+  border-radius: 35px;
+}
+
+/* =============
     Header
 ============= */
+#header {
+  text-align: center;
+  margin: 110px 0px 70px;
+}
 #header h1 {
   font-size: 2.75rem;
   font-weight: 600;
+  margin-bottom: 30px;
 }
-#header h3 {
+#header p {
   font-size: 1.375rem;
   font-weight: 500;
 }
@@ -423,27 +512,50 @@ textarea {
     Plans
 ============= */
 #plans ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 30px 1fr 30px 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
 }
 #plans ul li {
+  width: 360px;
+  height: 480px;
   padding: 30px;
   list-style: none;
+  border-radius: 14px;
+  -webkit-box-shadow: 0px 6px 50px 5px rgba(6, 14, 26, 0.05);
+          box-shadow: 0px 6px 50px 5px rgba(6, 14, 26, 0.05);
 }
 #plans ul li h3 {
   font-size: 1.375rem;
   font-weight: 500;
+  text-align: center;
+  padding: 50px 0px 15px;
+}
+#plans ul li img {
+  display: block;
+  margin: auto;
 }
 #plans ul li h1 {
   font-size: 2.75rem;
   font-weight: 600;
+  line-height: 130%;
+  text-align: center;
+  padding-top: 7px;
 }
 #plans ul li p {
   font-size: 1rem;
   font-weight: 400;
+  line-height: 160%;
+  text-align: center;
+  padding: 65px;
+  margin: 0px 35px;
+  color: black;
 }
 #plans ul li button {
+  display: block;
+  margin: auto;
   font-size: 1rem;
   font-weight: 500;
   -webkit-transition: 0.5s;
@@ -452,4 +564,17 @@ textarea {
 }
 #plans ul li button:hover {
   background-color: lightpink;
+}
+#plans #purple_top {
+  width: 360px;
+  height: 480px;
+  padding: 30px;
+  list-style: none;
+  border-radius: 14px;
+  -webkit-box-shadow: 0px 6px 50px 5px rgba(6, 14, 26, 0.05);
+          box-shadow: 0px 6px 50px 5px rgba(6, 14, 26, 0.05);
+  background-image: url(/img/purple.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: white;
 }

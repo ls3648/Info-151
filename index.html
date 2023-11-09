@@ -16,53 +16,61 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=PT+Serif:wght@400;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/styles.css">
-    <title>Week 5 - Plans</title>
+    <title>Week 6 - Plans</title>
 </head>
 
 <body>
-
-    <section>   
-        <header id="header">   
-            <h1>Choose your best pricing plan</h1>
-            <h3>Added for Monthly <img src="img/sky_blue_toggle.png" alt="sky blue oval">
-                <img src="img/dark_blue_toggle.png" alt="dark blue oval"> Yearly</h3>
-        </header>
-
-        <section id="plans">   
-            <ul>    
-                <li>    
-                    <h3>Start-up</h3>
-                    <img src="img/black_arrow.png" alt="black arrow">
-                    <h1>$10/mo</h1>
-                    <p>Easy Customizable Commercial license Single user license Hotline support 24/7</p>
-                    <button class="blue-btn">TRY THIS PACKAGE</button>
-                </li>
-
-                <li>    
-                    <h3>Classic</h3>
-                    <img src="img/wh_arrow.png" alt="white arrow">
-                    <h1>$30/mo</h1>
-                    <p>Easy Customizable Commercial license 5 user license Hotline support 24/7</p>
-                    <button class="dark-blue-btn">TRY THIS PACKAGE</button>
-                </li>
-
-                <li>    
-                    <h3>Premium</h3>
-                    <img src="img/black_arrow.png" alt="black arrow">
-                    <h1>$49/mo</h1>
-                    <p>Easy Customizable Commercial license 5 user license Hotline support 24/7</p>
-                    <button class="blue-btn">TRY THIS PACKAGE</button>
-                </li>
-            </ul>
-        </section>
-    </section>
-
-    <div id="validation-logo">
-        <a href=" https://validator.w3.org/nu/?doc=https://week-4-plans--ls3648.netlify.app/" target="_blank">
-            <img src="img/html-logo.svg" alt="Valid HTML 5">
-            </a>
-    </div>
-
+    <main>
+        <div id="main-grid-item">
+            <section>   
+                <header id="header">   
+                    <h1>Choose your best pricing plan</h1>
+                    <p>Added for Monthly
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                        Yearly
+                    </p>
+                 </header>
+        
+                <section id="plans">   
+                    <ul>    
+                        <li>    
+                            <h3>Start-up</h3>
+                            <img src="img/black_arrow.png" alt="black arrow">
+                            <h1>$10/mo</h1>
+                            <p>Easy Customizable Commercial license Single user license Hotline support 24/7</p>
+                            <button class="blue-btn">TRY THIS PACKAGE</button>
+                        </li>
+        
+                        <li id="purple_top">    
+                            <h3>Classic</h3>
+                            <img src="img/wh_arrow.png" alt="white arrow">
+                            <h1>$30/mo</h1>
+                            <p>Easy Customizable Commercial license 5 user license Hotline support 24/7</p>
+                            <button class="dark-blue-btn">TRY THIS PACKAGE</button>
+                        </li>
+        
+                        <li>    
+                            <h3>Premium</h3>
+                            <img src="img/black_arrow.png" alt="black arrow">
+                            <h1>$49/mo</h1>
+                            <p>Easy Customizable Commercial license 10 user license Hotline support 24/7</p>
+                            <button class="blue-btn">TRY THIS PACKAGE</button>
+                        </li>
+                    </ul>
+                </section>
+            </section>
+        
+            <div id="validation-logo">
+                <a href=" https://validator.w3.org/nu/?doc=https://week-4-plans--ls3648.netlify.app/" target="_blank">
+                    <img src="img/html-logo.svg" alt="Valid HTML 5">
+                    </a>
+            </div>
+        </div>
+    </main>
+    
     <script src="js/scripts-dist.js"></script>
 </body>
 

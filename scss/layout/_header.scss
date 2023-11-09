@@ -2,11 +2,14 @@
     Header
 ============= */
 #header{
+    text-align: center;
+    margin: 110px 0px 70px;
     h1{
         font-size: rem-calc(44);
         font-weight: 600;
+        margin-bottom: 30px;
     }
-    h3{
+    p{
         font-size: rem-calc(22);
         font-weight: 500;
     }

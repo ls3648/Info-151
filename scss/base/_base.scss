@@ -1,7 +1,17 @@
 /* =============
     Base
 ============= */
-
+body{
+    main{
+        display: grid;
+        grid-template-columns: auto 1400px auto;
+        grid-template-areas: ". main-content .";
+        #main-grid-item{
+            grid-area: main-content;
+        }
+    }
+}
 #validation-logo{
+    text-align: center;
     margin-top: 60px;
 }
