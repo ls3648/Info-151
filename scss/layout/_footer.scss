@@ -3,79 +3,141 @@
 ============= */
 footer{
     color: var(--white);
-    padding: 30px 0px;
-}
+    // padding: 30px 0px;
 
-#icon_row{
-    display: flex;
-}
-
-#footer_top{
-    display: flex;
-    section{
-        p{
-            font-size: rem-calc(16);
-            font-weight: 400;
-        }
-        h2{
-            margin-bottom: 15px;
-            font-size: rem-calc(22);
-            font-weight: 500;
-            font-family: 'Poppins', sans-serif;
-        }
-        ul{
-            li{
-                list-style: none;
-                // LOVE HATE
-                a:link, a:visited{
-                    font-size: rem-calc(18);
+    #footer_top{
+        padding-top: 100px;
+        background-color: var(--black);
+        display: grid;
+        grid-template-columns: auto 1400px auto;
+        grid-template-areas: ". ftgi .";
+    
+        #footer_top_grid_item{
+            grid-area: ftgi;
+            
+            display: grid;
+            grid-template-columns: 35% 15% 18% auto;
+            
+            section{
+                img{
+                    margin-bottom: 30px;
+                }
+                p{
+                    font-size: rem-calc(16);
                     font-weight: 400;
-                    color: white;
-                    text-decoration: none;
-                    padding: 10px;
-                    display: inline-block;
-                    transition: 0.5s;
+                    line-height: 160%;
+                    margin-bottom: 30px;
+                    padding-right: 185px;
                 }
-                a:hover, a:active{
-                    color: lightpink;
+                h2{
+                    margin-bottom: 30px;
+                    font-size: rem-calc(22);
+                    font-weight: 500;
+                    font-family: 'Poppins', sans-serif;
                 }
-                
+                #icon_row{
+                    display: flex;
+                    margin-bottom: 20px;
+                    li{
+                        a:link, a:visited{
+                            height: 30px;
+                            width: 30px;
+                            border: 1px solid var(--white);
+                            border-radius: 100%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            transition: 0.5s;
+                        }
+                        a:hover, a:active{
+                            background-color: lightpink;
+                            color: var(--white);
+                        }
+                    }
+                }
+                ul{
+                    li{
+                        list-style: none;
+                        margin-right: 58px;
+                        margin-bottom: 10px;
+                        // LOVE HATE
+                        a:link, a:visited{
+                            font-size: rem-calc(18);
+                            font-weight: 400;
+                            color: white;
+                            text-decoration: none;
+                            margin-bottom: 5px;
+                            display: inline-block;
+                            transition: 0.5s;
+                        }
+                        a:hover, a:active{
+                            color: lightpink;
+                        }
+                        
+                    }
+                }
+                div{
+                    display: flex;
+                    form{
+                        font-size: rem-calc(16);
+                        font-weight: 400;
+                        input{
+                            border-radius: 5px 0px 0px 5px;
+                            border: 1px solid rgba(255, 255, 255, 0.50);
+                            padding: 15px 30px;
+                            background-color: black;
+                        }
+                    }
+                    button{
+                        font-size: rem-calc(16);
+                        font-weight: 500;
+                        transition: 0.5s;
+                        border-radius: 0px 5px 5px 0px;
+                        cursor: pointer;
+                        border: 1px solid var(--light-blue);
+                    }
+                    button:hover{
+                        background-color: lightpink;
+                        
+                    }
+                }
             }
         }
-        div{
-            display: flex;
-            form{
-                font-size: rem-calc(16);
-                font-weight: 400;
-                input{
-                    border-radius: 5px 0px 0px 5px;
-                    border: 1px solid rgba(255, 255, 255, 0.50);
-                    padding: 15px 30px;
-                    background-color: black;
-                }
-            }
-            button{
-                font-size: rem-calc(16);
+    }
+
+    hr{
+        // height: 1px;
+        // width: 100px;
+        // background-color: var(--white);
+        margin: 0;
+        padding: 0;
+        // border: 1px solid red;
+    }
+
+    #footer_bottom{
+        background-color: var(--black);
+        display: grid;
+        grid-template-columns: auto 1400px auto;
+        grid-template-areas: ". fbgi .";
+        // border: 5px solid red;
+    
+        
+        #footer_bottom_grid_item{
+            grid-area: fbgi;
+            margin: auto;
+            p{
+                margin-top: 30px;
+                margin-bottom: 35px;
+                font-size: rem-calc(18);
                 font-weight: 500;
-                transition: 0.5s;
-                border-radius: 0px 5px 5px 0px;
-                cursor: pointer;
-                border: 1px solid var(--light-blue);
-            }
-            button:hover{
-                background-color: lightpink;
-                
+                justify-content: center;
             }
         }
     }
 }
 
-#footer_bottom{
-    display: flex;
-    justify-content: center;
-    p{
-        margin-top: 30px;
-        font-size: rem-calc(18);
-        font-weight: 500;
-    }
-}
+
+
+
+
+
