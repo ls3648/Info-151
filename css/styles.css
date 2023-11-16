@@ -370,6 +370,16 @@ p {
 ============= */
 button {
   border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0px 10 px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .everest-btn {
@@ -380,7 +390,6 @@ button {
   border: 1px solid var(--everest);
   -webkit-transform: 0.5s;
           transform: 0.5s;
-  cursor: pointer;
 }
 
 .everest-btn:hover {
@@ -395,7 +404,6 @@ button {
   border: 1px solid var(--dark-gray);
   -webkit-transform: 0.5s;
           transform: 0.5s;
-  cursor: pointer;
 }
 
 .trans-btn:hover {
@@ -425,11 +433,16 @@ textarea {
 /* =============
     Navigation
 ============= */
+.showMainNav {
+  display: block !important;
+}
+
 a {
   text-decoration: none;
 }
 
 nav {
+  display: none;
   margin-top: 20px;
 }
 @media (min-width: 768px) {
@@ -462,21 +475,25 @@ nav ul {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    width: 80%;
+    border: 1px solid red;
   }
+}
+nav ul li {
+  width: 100%;
 }
 nav ul li a:link, nav ul li a:visited {
   padding: 28px 0px 40px 0px;
   text-align: right;
-  width: 340px;
   border-bottom: 1px solid var(--gray);
   display: inline-block;
   color: var(--gray);
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  width: 100%;
 }
 @media (min-width: 1200px) {
   nav ul li a:link, nav ul li a:visited {
-    width: 110px;
     padding: 16px;
     margin-bottom: 20px;
     text-align: center;
@@ -485,6 +502,7 @@ nav ul li a:link, nav ul li a:visited {
 }
 nav ul li a:hover, nav ul li a:active {
   color: var(--everest);
+  font-weight: 600px;
 }
 
 /* =============
@@ -500,15 +518,15 @@ header {
 }
 @media (min-width: 768px) {
   header {
-    -ms-grid-columns: 51% 45% auto;
-    grid-template-columns: 51% 45% auto;
-        grid-template-areas: "logo buttons burger";
+    -ms-grid-columns: 25% 72% auto;
+    grid-template-columns: 25% 72% auto;
+        grid-template-areas: "logo buttons burger" "nav nav nav";
   }
 }
 @media (min-width: 1200px) {
   header {
-    -ms-grid-columns: 25% 50% auto;
-    grid-template-columns: 25% 50% auto;
+    -ms-grid-columns: 25% 56% auto;
+    grid-template-columns: 25% 56% auto;
         grid-template-areas: "logo nav buttons";
   }
 }
@@ -543,21 +561,26 @@ header #burger-container {
   }
 }
 header #buttons-container {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  margin: 21px 0px;
+  margin: 20px 0px;
   gap: 16px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  grid-area: buttons;
+  display: none;
+}
+@media (min-width: 768px) {
+  header #buttons-container {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    grid-area: buttons;
+  }
 }
 header nav {
   -ms-grid-row: 2;
@@ -578,6 +601,11 @@ header nav {
     -ms-grid-row: 1;
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
+  }
+  header nav {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
   }
 }
 @media (min-width: 1200px) {

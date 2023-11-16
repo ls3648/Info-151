@@ -1,11 +1,17 @@
 /* =============
     Navigation
 ============= */
+
+.showMainNav{
+    display: block !important;
+}
+
 a{
     text-decoration: none;
 }
 
 nav{
+    display: none;
     margin-top: 20px;
 
     @include md{
@@ -21,25 +27,29 @@ nav{
         display: flex;
         flex-direction: column;
         align-items: flex-end;
+        //border: 1px solid blue;
 
         @include xl{
             flex-direction: row;
+            width: 80%;
+            border: 1px solid red;
         }
         
         li{
+            width: 100%;
+            //border: 1px solid red;
             a:link, a:visited{
                 // border: 1px solid aqua;
                 padding: 28px 0px 40px 0px;
                 text-align: right;
-                width:340px;
                 border-bottom: 1px solid var(--gray);
                 display: inline-block;
                 color: var(--gray);
                 transition: 0.5s;
+                width: 100%;
 
                 @include xl{
                     // border: 1px solid aqua;
-                    width: 110px;
                     padding: 16px;
                     margin-bottom: 20px;
                     text-align: center;
@@ -49,11 +59,8 @@ nav{
 
             a:hover, a:active{
                 color: var(--everest);
+                font-weight: 600px;
             }
         }
     }
-
-    
-
-    
 }

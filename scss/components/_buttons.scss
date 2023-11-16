@@ -2,7 +2,14 @@
     Buttons
 ============= */
 button{
-    border: none
+    border: none;
+    background-color: transparent; 
+    padding: 0;
+    margin: 0px 10 px;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-end;
+    // align-content: space-around;
 }
 
 .everest-btn{
@@ -12,8 +19,6 @@ button{
     border-radius: 8px;
     border: 1px solid var(--everest);
     transform: 0.5s;
-    cursor: pointer;
-    // border: 1px solid red;
 }
 
 .everest-btn:hover{
@@ -27,7 +32,6 @@ button{
     border-radius: 8px;
     border: 1px solid var(--dark-gray);
     transform: 0.5s;
-    cursor: pointer;
 }
 
 .trans-btn:hover{

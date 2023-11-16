@@ -11,13 +11,14 @@ header{
     "buttons buttons";
     
     @include md{
-        grid-template-columns: 51% 45% auto;
+        grid-template-columns: 25% 72% auto;
         grid-template-areas: 
-        "logo buttons burger";
+        "logo buttons burger"
+        "nav nav nav";
     }
 
     @include xl{
-        grid-template-columns: 25% 50% auto;
+        grid-template-columns: 25% 56% auto;
         grid-template-areas: 
         "logo nav buttons";
     }
@@ -43,12 +44,21 @@ header{
 
     #buttons-container{
         // border: 1px solid black;
-        margin: 21px 0px;
+        margin: 20px 0px;
         gap: 16px;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        grid-area: buttons;
+        // height: 50%;
+        // width: min-content;
+        // box-sizing: border-box;
+        
+        display: none;
+
+         @include md{
+            // display: block;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            grid-area: buttons;
+        }
     }
 
     nav{
