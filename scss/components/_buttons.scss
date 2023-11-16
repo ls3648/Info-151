@@ -10,25 +10,26 @@ button{
     color: var(--cream);
     padding: 16px 24px;
     border-radius: 8px;
+    border: 1px solid var(--everest);
     transform: 0.5s;
     cursor: pointer;
     // border: 1px solid red;
 }
 
 .everest-btn:hover{
-    background-color: lightpink;
+    background-color: var(--gray);
 }
 
 .trans-btn{
     background-color: var(--cream);
-    color: #0A157A;
+    color: var(--dark-gray);
     padding: 16px 24px;
     border-radius: 8px;
-    border: 1px solid #0A157A;
+    border: 1px solid var(--dark-gray);
     transform: 0.5s;
     cursor: pointer;
 }
 
 .trans-btn:hover{
-    background-color: lightpink;
+    background-color: var(--gray);
 }

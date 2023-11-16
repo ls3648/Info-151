@@ -1,3 +1,42 @@
 /* =============
     Header
 ============= */
+header{
+    padding: 0px 24px;
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-areas: 
+    "logo burger"
+    "nav nav"
+    "buttons buttons";
+
+    #logo-container{
+        // border: 1px solid green;
+        display: flex;
+        align-items: center;
+        grid-area: logo;
+    }
+
+    #burger-container{
+        // border: 1px solid red;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        grid-area: burger;
+    }
+
+    #buttons-container{
+        // border: 1px solid black;
+        margin: 21px 0px;
+        gap: 16px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        grid-area: buttons;
+    }
+
+    nav{
+        grid-area: nav;
+        // see nav partional for scss
+    }
+}

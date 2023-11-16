@@ -16,6 +16,7 @@ html {
   --gray: #74768F;
   --cream: #FBFBFB;
   --everest: #024A58;
+  --dark-gray: #0A157A ;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -334,14 +335,36 @@ template {
 /* =============
     Base
 ============= */
+ul {
+  padding: 0;
+  margin: 0;
+}
+ul li {
+  list-style: none;
+}
+
 #validation-logo {
   text-align: center;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 /* =============
     Typography
 ============= */
+body {
+  font-family: "Inter", sans-serif;
+}
+
+h1, h2, h3 {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
 /* =============
     Buttons
 ============= */
@@ -354,28 +377,29 @@ button {
   color: var(--cream);
   padding: 16px 24px;
   border-radius: 8px;
+  border: 1px solid var(--everest);
   -webkit-transform: 0.5s;
           transform: 0.5s;
   cursor: pointer;
 }
 
 .everest-btn:hover {
-  background-color: lightpink;
+  background-color: var(--gray);
 }
 
 .trans-btn {
   background-color: var(--cream);
-  color: #0A157A;
+  color: var(--dark-gray);
   padding: 16px 24px;
   border-radius: 8px;
-  border: 1px solid #0A157A;
+  border: 1px solid var(--dark-gray);
   -webkit-transform: 0.5s;
           transform: 0.5s;
   cursor: pointer;
 }
 
 .trans-btn:hover {
-  background-color: lightpink;
+  background-color: var(--gray);
 }
 
 /* =============
@@ -401,9 +425,99 @@ textarea {
 /* =============
     Navigation
 ============= */
+a {
+  text-decoration: none;
+}
+
+nav {
+  margin-top: 20px;
+}
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+nav ul li a:link, nav ul li a:visited {
+  padding: 28px 0px;
+  text-align: right;
+  width: 340px;
+  border-bottom: 1px solid var(--gray);
+  display: inline-block;
+  color: var(--gray);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+nav ul li a:hover, nav ul li a:active {
+  color: var(--everest);
+}
+
 /* =============
     Header
 ============= */
+header {
+  padding: 0px 24px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% auto;
+  grid-template-columns: 50% auto;
+      grid-template-areas: "logo burger" "nav nav" "buttons buttons";
+}
+header #logo-container {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  grid-area: logo;
+}
+header #burger-container {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  grid-area: burger;
+}
+header #buttons-container {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  margin: 21px 0px;
+  gap: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  grid-area: buttons;
+}
+header nav {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: nav;
+}
+
 /* =============
     Footer
 ============= */
@@ -414,5 +528,5 @@ textarea {
   background-image: url(/img/hero.jpg);
   background-position: center;
   background-size: cover;
-  height: 100vh;
+  height: 70vh;
 }
