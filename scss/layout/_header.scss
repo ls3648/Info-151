@@ -9,6 +9,18 @@ header{
     "logo burger"
     "nav nav"
     "buttons buttons";
+    
+    @include md{
+        grid-template-columns: 51% 45% auto;
+        grid-template-areas: 
+        "logo buttons burger";
+    }
+
+    @include xl{
+        grid-template-columns: 25% 50% auto;
+        grid-template-areas: 
+        "logo nav buttons";
+    }
 
     #logo-container{
         // border: 1px solid green;
@@ -23,6 +35,10 @@ header{
         justify-content: flex-end;
         align-items: center;
         grid-area: burger;
+        
+        @include xl{
+            display: none;
+        }
     }
 
     #buttons-container{
@@ -37,6 +53,6 @@ header{
 
     nav{
         grid-area: nav;
-        // see nav partional for scss
+        // see nav partional for scss        
     }
 }

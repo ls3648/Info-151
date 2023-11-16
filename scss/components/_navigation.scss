@@ -8,21 +8,43 @@ a{
 nav{
     margin-top: 20px;
 
+    @include md{
+        display: none;
+    }
+
+    @include xl{
+        display: flex;
+    }
+
+
     ul{
         display: flex;
         flex-direction: column;
         align-items: flex-end;
+
+        @include xl{
+            flex-direction: row;
+        }
         
         li{
             a:link, a:visited{
                 // border: 1px solid aqua;
-                padding: 28px 0px;
+                padding: 28px 0px 40px 0px;
                 text-align: right;
                 width:340px;
                 border-bottom: 1px solid var(--gray);
                 display: inline-block;
                 color: var(--gray);
                 transition: 0.5s;
+
+                @include xl{
+                    // border: 1px solid aqua;
+                    width: 110px;
+                    padding: 16px;
+                    margin-bottom: 20px;
+                    text-align: center;
+                    border-bottom: none;
+                }
             }
 
             a:hover, a:active{
@@ -30,4 +52,8 @@ nav{
             }
         }
     }
+
+    
+
+    
 }
