@@ -13,6 +13,9 @@ html {
 :root {
   --black: #000000;
   --white: #ffffff;
+  --gray: #74768F;
+  --cream: #FBFBFB;
+  --everest: #024A58;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -337,6 +340,39 @@ template {
 /* =============
     Buttons
 ============= */
+button {
+  border: none;
+}
+
+.everest-btn {
+  background-color: var(--everest);
+  color: var(--cream);
+  padding: 16px 24px;
+  border-radius: 8px;
+  -webkit-transform: 0.5s;
+          transform: 0.5s;
+  cursor: pointer;
+}
+
+.everest-btn:hover {
+  background-color: lightpink;
+}
+
+.trans-btn {
+  background-color: var(--cream);
+  color: #0A157A;
+  padding: 16px 24px;
+  border-radius: 8px;
+  border: 1px solid #0A157A;
+  -webkit-transform: 0.5s;
+          transform: 0.5s;
+  cursor: pointer;
+}
+
+.trans-btn:hover {
+  background-color: lightpink;
+}
+
 /* =============
     Forms
 ============= */
@@ -363,6 +399,13 @@ textarea {
 /* =============
     Header
 ============= */
+#hero {
+  background-image: url(/img/hero.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
 /* =============
     Footer
 ============= */
