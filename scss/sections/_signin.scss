@@ -2,16 +2,21 @@
     Sign In
 ============= */
 #sign-in-container{
+    
+
+
     // background-color: var(--everest);
     background-color: #024A58AA;
     height: 100vh;
-    display: flex;
+    // display: flex;
     align-items: center;
     justify-content: center;
     padding: 16px;
     position: fixed;
     width: 100%;
     box-sizing: border-box;
+
+    display: none;
     
 
     form{

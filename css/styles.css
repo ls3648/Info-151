@@ -395,7 +395,7 @@ button {
 }
 
 .everest-btn:hover {
-  background-color: var(--gray);
+  background-color: var(--light-green);
 }
 
 .trans-btn {
@@ -662,9 +662,6 @@ header nav {
 #sign-in-container {
   background-color: rgba(2, 74, 88, 0.6666666667);
   height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -676,6 +673,7 @@ header nav {
   width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  display: none;
 }
 #sign-in-container form {
   background-color: rgba(2, 74, 88, 0.8);
