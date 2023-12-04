@@ -23,7 +23,7 @@ function showNav(){
     }
     else{
         console.log("hide menu");
-        // this will add the class of showMainNav to the id mainNav
+        // this will remove the class of showMainNav to the id mainNav
         mainNav.classList.remove("showMainNav");
 
         buttonContainer.classList.remove("showButton");
