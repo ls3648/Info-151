@@ -37,3 +37,14 @@ button{
 .trans-btn:hover{
     background-color: var(--gray);
 }
+
+.close-btn{
+    background-color: var(--red);
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--cream);
+}
