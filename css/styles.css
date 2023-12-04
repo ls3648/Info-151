@@ -337,6 +337,12 @@ template {
 /* =============
     Base
 ============= */
+.show-Sign-In-Container {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
 ul {
   padding: 0;
   margin: 0;
@@ -370,6 +376,15 @@ p {
 /* =============
     Buttons
 ============= */
+.showButton {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
 button {
   border: none;
   background-color: transparent;
@@ -387,7 +402,7 @@ button {
 .everest-btn {
   background-color: var(--everest);
   color: var(--cream);
-  padding: 16px 24px;
+  padding: 16px 8px;
   border-radius: 8px;
   border: 1px solid var(--everest);
   -webkit-transform: 0.5s;
@@ -401,9 +416,9 @@ button {
 .trans-btn {
   background-color: var(--cream);
   color: var(--dark-gray);
-  padding: 16px 24px;
+  padding: 16px 8px;
   border-radius: 8px;
-  border: 1px solid var(--dark-gray);
+  border: 1px solid var(--everest);
   -webkit-transform: 0.5s;
           transform: 0.5s;
 }
@@ -460,23 +475,21 @@ a {
   text-decoration: none;
 }
 
-nav {
+#mainNav {
   display: none;
   margin-top: 20px;
 }
 @media (min-width: 768px) {
-  nav {
+  #mainNav {
     display: none;
   }
 }
 @media (min-width: 1200px) {
-  nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+  #mainNav {
+    display: block;
   }
 }
-nav ul {
+#mainNav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -489,7 +502,7 @@ nav ul {
           align-items: flex-end;
 }
 @media (min-width: 1200px) {
-  nav ul {
+  #mainNav ul {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -497,10 +510,10 @@ nav ul {
     width: 80%;
   }
 }
-nav ul li {
+#mainNav ul li {
   width: 100%;
 }
-nav ul li a:link, nav ul li a:visited {
+#mainNav ul li a:link, #mainNav ul li a:visited {
   padding: 28px 0px 40px 0px;
   text-align: right;
   border-bottom: 1px solid var(--gray);
@@ -511,14 +524,14 @@ nav ul li a:link, nav ul li a:visited {
   width: 100%;
 }
 @media (min-width: 1200px) {
-  nav ul li a:link, nav ul li a:visited {
+  #mainNav ul li a:link, #mainNav ul li a:visited {
     padding: 16px;
     margin-bottom: 20px;
     text-align: center;
     border-bottom: none;
   }
 }
-nav ul li a:hover, nav ul li a:active {
+#mainNav ul li a:hover, #mainNav ul li a:active {
   color: var(--everest);
   font-weight: 600px;
 }
@@ -533,6 +546,7 @@ header {
   -ms-grid-columns: 50% auto;
   grid-template-columns: 50% auto;
       grid-template-areas: "logo burger" "nav nav" "buttons buttons";
+  height: 100%;
 }
 @media (min-width: 768px) {
   header {
@@ -600,7 +614,7 @@ header #buttons-container {
     grid-area: buttons;
   }
 }
-header nav {
+header #mainNav {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
@@ -620,7 +634,7 @@ header nav {
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
   }
-  header nav {
+  header #mainNav {
     -ms-grid-row: 2;
     -ms-grid-column: 1;
     -ms-grid-column-span: 3;
@@ -636,7 +650,7 @@ header nav {
     -ms-grid-column: 3;
     -ms-grid-column-span: 1;
   }
-  header nav {
+  header #mainNav {
     -ms-grid-row: 1;
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;

@@ -9,6 +9,7 @@ header{
     "logo burger"
     "nav nav"
     "buttons buttons";
+    height: 100%;
     
     @include md{
         grid-template-columns: 25% 72% auto;
@@ -61,7 +62,7 @@ header{
         }
     }
 
-    nav{
+    #mainNav{
         grid-area: nav;
         // see nav partional for scss        
     }

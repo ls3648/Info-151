@@ -1,6 +1,11 @@
 /* =============
     Buttons
 ============= */
+.showButton{
+    display: flex !important;
+    justify-content:flex-end;
+}
+
 button{
     border: none;
     background-color: transparent; 
@@ -15,7 +20,7 @@ button{
 .everest-btn{
     background-color: var(--everest);
     color: var(--cream);
-    padding: 16px 24px;
+    padding: 16px 8px;
     border-radius: 8px;
     border: 1px solid var(--everest);
     transform: 0.5s;
@@ -28,9 +33,9 @@ button{
 .trans-btn{
     background-color: var(--cream);
     color: var(--dark-gray);
-    padding: 16px 24px;
+    padding: 16px 8px;
     border-radius: 8px;
-    border: 1px solid var(--dark-gray);
+    border: 1px solid var(--everest);
     transform: 0.5s;
 }
 
