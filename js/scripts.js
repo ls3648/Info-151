@@ -6,6 +6,8 @@
 var mainNav = document.querySelector("#mainNav");
 var buttonContainer = document.querySelector("#buttons-container");
 var burgerBtn = document.querySelector("#burger-container");
+var burgerBars = document.querySelector("#burger-bars");
+var burgerX = document.querySelector("#burger-x");
 
 // initial condition statement, this can only be true or false since it's a boolean
 var canYouSeeMainNav = false;
@@ -20,6 +22,10 @@ function showNav(){
         buttonContainer.classList.add("showButton");
         // sets boolean to true
         canYouSeeMainNav=true;
+        // hide burger
+        burgerBars.classList.add("hide-burger-bars");
+        //show burger x
+        burgerX.classList.remove("hide-burger-x");
     }
     else{
         console.log("hide menu");
@@ -27,6 +33,10 @@ function showNav(){
         mainNav.classList.remove("showMainNav");
         // this will remove the class of showButton from the id buttonContainer
         buttonContainer.classList.remove("showButton");
+        // show burger
+        burgerBars.classList.remove("hide-burger-bars");
+        // hide burger x
+        burgerX.classList.add("hide-burger-x");
         // sets boolean back to initial state of false
         canYouSeeMainNav=false;
     }
@@ -46,13 +56,17 @@ var closeSignInModalBtn = document.querySelector("#close-sign-in-modal-btn");
 
 function showSignInModal() {
     console.log("show modal now");
+    // this will show sign in container
     signInContainer.classList.add("show-Sign-In-Container");
     mainNav.classList.remove("showMainNav");
     buttonContainer.classList.remove("showButton");
+    burgerBars.classList.remove("hide-burger-bars");
+    burgerX.classList.add("hide-burger-x");
     canYouSeeMainNav=false;
 }
 function hideSignInModal() {
     console.log("hide modal now");
+    // this will remove sign in container
     signInContainer.classList.remove("show-Sign-In-Container");
 }
 
@@ -63,9 +77,9 @@ closeSignInModalBtn.addEventListener("click", hideSignInModal);
 
 
 
-/* --------------------------
-    Week 7 - Navigation
---------------------------- */
+/* --------------------------------
+    My bad Week 7 - Navigation code
+--------------------------------- */
 
 // // alert("Hello Class!");////////////
 

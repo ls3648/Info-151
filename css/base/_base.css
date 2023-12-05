@@ -1,0 +1,29 @@
+/* =============
+    Base
+============= */
+.show-Sign-In-Container {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
+.hide-burger-x {
+  display: none;
+}
+
+.hide-burger-bars {
+  display: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+ul li {
+  list-style: none;
+}
+
+#validation-logo {
+  text-align: center;
+  margin-top: 50px;
+}
