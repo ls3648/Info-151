@@ -15,7 +15,8 @@
     
     <!-- FancyApps -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
-    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.css"/>
+
     <link rel="stylesheet" href="css/styles.css">
     <title>Week 10 Fancy Apps</title>
 </head>
@@ -83,7 +84,7 @@
 
    <section id="fancybox">
         <div id="fb-grid-item">
-            <h1>FancyBox</h1>
+            <h1>Fancy Box</h1>
             <ul>
                 <li>
                     <a href="/img/fancy/owl.jpg" data-fancybox="gallery-1"><img src="img/fancy/owl.jpg" alt="owl"/></a>
@@ -100,6 +101,25 @@
             </ul>
         </div>
    </section>
+
+   <section id="fancycarousel">
+        <div id="fb-grid-item">
+            <h1>Fancy Carousel</h1>
+            <div class="f-carousel" id="myCarousel">
+                <!-- This way leaves varying space between the dots and the images
+                <div class="f-carousel__slide"><img src="img/fancy/owl.jpg" alt="owl"/></div>
+                <div class="f-carousel__slide"><img src="img/fancy/deer.jpg" alt="deer"/></div>
+                <div class="f-carousel__slide"><img src="img/fancy/bear.jpg" alt="bear"/></div>
+                <div class="f-carousel__slide"><img src="img/fancy/wolf.jpg" alt="wolf"/></div> -->
+
+                <!-- This way takes care of that varying space -->
+                <div class="f-carousel__slide"><div id="fc-1" class="slide"></div></div>
+                <div class="f-carousel__slide"><div id="fc-2" class="slide"></div></div>
+                <div class="f-carousel__slide"><div id="fc-3" class="slide"></div></div>
+                <div class="f-carousel__slide"><div id="fc-4" class="slide"></div></div>
+            </div>
+        </div>
+    </section>
     
    <div id="validation-logo">   
         <a href=" https://validator.w3.org/nu/?doc=https://week-8-9-sign-up--ls3648.netlify.app/" target="_blank">
@@ -109,6 +129,9 @@
    
     <!-- FancyBox  -->
    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+   
+   <!-- FancyCarousel -->
+   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.umd.js"></script>
 
    <script src="js/scripts-dist.js"></script>
     

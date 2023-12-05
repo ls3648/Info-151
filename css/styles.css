@@ -844,3 +844,48 @@ header #mainNav {
 #fancybox #fb-grid-item ul li img {
   width: 100%;
 }
+
+/* ===================
+    FancyCarousel
+=================== */
+#fancycarousel {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 16px auto 16px;
+  grid-template-columns: 16px auto 16px;
+      grid-template-areas: ". fc .";
+  margin: 50px 0;
+}
+@media (min-width: 768px) {
+  #fancycarousel {
+    margin: 100px 0;
+  }
+}
+@media (min-width: 1200px) {
+  #fancycarousel {
+    -ms-grid-columns: auto 1200px auto;
+    grid-template-columns: auto 1200px auto;
+  }
+}
+#fancycarousel #fb-grid-item {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: fc;
+}
+#fancycarousel #fb-grid-item .slide {
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+}
+#fancycarousel #fb-grid-item #fc-1 {
+  background-image: url("../img/fancy/owl.jpg");
+}
+#fancycarousel #fb-grid-item #fc-2 {
+  background-image: url("../img/fancy/deer.jpg");
+}
+#fancycarousel #fb-grid-item #fc-3 {
+  background-image: url("../img/fancy/bear.jpg");
+}
+#fancycarousel #fb-grid-item #fc-4 {
+  background-image: url("../img/fancy/wolf.jpg");
+}

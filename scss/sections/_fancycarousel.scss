@@ -1,0 +1,45 @@
+/* ===================
+    FancyCarousel
+=================== */
+#fancycarousel{
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". fc .";
+    margin: 50px 0;
+
+    @include md{
+        margin: 100px 0;
+    }
+
+    @include xl{
+        grid-template-columns: auto 1200px auto;
+    }
+
+    #fb-grid-item{
+        grid-area: fc;
+
+        // Code below goes with the carousel display with varying space
+        // img{
+        //     width: 100%;
+        // }
+
+        .slide{
+            height: 60vh;
+            background-size: cover;
+            background-position: center;
+        }
+
+        #fc-1{
+            background-image: url("../img/fancy/owl.jpg");
+        }
+        #fc-2{
+            background-image: url("../img/fancy/deer.jpg");
+        }
+        #fc-3{
+            background-image: url("../img/fancy/bear.jpg");
+        }
+        #fc-4{
+            background-image: url("../img/fancy/wolf.jpg");
+        }
+    }
+}
