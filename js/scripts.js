@@ -55,7 +55,7 @@ var signInContainer = document.querySelector("#sign-in-container");
 var closeSignInModalBtn = document.querySelector("#close-sign-in-modal-btn");
 
 function showSignInModal() {
-    console.log("show modal now");
+    console.log("show sign in modal");
     // this will show sign in container
     signInContainer.classList.add("show-Sign-In-Container");
     mainNav.classList.remove("showMainNav");
@@ -65,7 +65,7 @@ function showSignInModal() {
     canYouSeeMainNav=false;
 }
 function hideSignInModal() {
-    console.log("hide modal now");
+    console.log("hide sign in modal");
     // this will remove sign in container
     signInContainer.classList.remove("show-Sign-In-Container");
 }
@@ -73,9 +73,32 @@ function hideSignInModal() {
 signInBtn.addEventListener("click", showSignInModal);
 closeSignInModalBtn.addEventListener("click", hideSignInModal);
 
+/* ------------------
+    Sign Up
+------------------- */
 
+var signUpBtn = document.querySelector("#sign-up-btn");
+var signUpContainer = document.querySelector("#sign-up-container");
+var cancelSignUpModalBtn = document.querySelector("#cancel-sign-up-modal-btn");
 
+function showSignUpModal() {
+    console.log("show sign up modal");
+    // this will show sign up container
+    signUpContainer.classList.add("show-Sign-Up-Container");
+    mainNav.classList.remove("showMainNav");
+    buttonContainer.classList.remove("showButton");
+    burgerBars.classList.remove("hide-burger-bars");
+    burgerX.classList.add("hide-burger-x");
+    canYouSeeMainNav=false;
+}
+function hideSignUpModal() {
+    console.log("hide sign up modal");
+    // this will remove sign up container
+    signUpContainer.classList.remove("show-Sign-Up-Container");
+}
 
+signUpBtn.addEventListener("click", showSignUpModal);
+cancelSignUpModalBtn.addEventListener("click", hideSignUpModal);
 
 /* --------------------------------
     My bad Week 7 - Navigation code
