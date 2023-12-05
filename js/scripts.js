@@ -7,7 +7,6 @@ const options = { infinite: true };
 
 new Carousel(container, options);
 
-
 /* ------------------
     Navigation
 ------------------- */
