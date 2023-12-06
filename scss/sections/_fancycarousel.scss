@@ -27,6 +27,14 @@
             height: 60vh;
             background-size: cover;
             background-position: center;
+
+            @include md{
+                height: 80vh;
+            }
+        
+            @include xl{
+                height: 100vh;
+            }
         }
 
         #fc-1{

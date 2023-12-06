@@ -343,7 +343,7 @@ template {
   display: flex !important;
 }
 
-.show-Sign-In-Container {
+.show-Sign-Up-Container {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important;
@@ -876,6 +876,16 @@ header #mainNav {
   height: 60vh;
   background-size: cover;
   background-position: center;
+}
+@media (min-width: 768px) {
+  #fancycarousel #fc-grid-item .slide {
+    height: 80vh;
+  }
+}
+@media (min-width: 1200px) {
+  #fancycarousel #fc-grid-item .slide {
+    height: 100vh;
+  }
 }
 #fancycarousel #fc-grid-item #fc-1 {
   background-image: url("../img/fancy/owl.jpg");
