@@ -1,0 +1,30 @@
+/* ==========
+    AOS
+=========== */
+#aos{
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". aos .";
+    margin: 30px 0;
+
+    @include md{
+        margin: 100px 0;
+    }
+
+    @include xl{
+        grid-template-columns: auto 1200px auto;
+    }
+
+    #aos-grid-item{
+        grid-area: aos;
+
+        .item{
+            box-sizing: border-box;
+            background-size: cover;
+            background-position: center;
+            img{
+                width: 100%;
+            }
+        }
+    }
+}

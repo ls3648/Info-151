@@ -343,7 +343,7 @@ template {
   display: flex !important;
 }
 
-.show-Sign-Up-Container {
+.show-Sign-In-Container {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important;
@@ -867,25 +867,62 @@ header #mainNav {
     grid-template-columns: auto 1200px auto;
   }
 }
-#fancycarousel #fb-grid-item {
+#fancycarousel #fc-grid-item {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: fc;
 }
-#fancycarousel #fb-grid-item .slide {
+#fancycarousel #fc-grid-item .slide {
   height: 60vh;
   background-size: cover;
   background-position: center;
 }
-#fancycarousel #fb-grid-item #fc-1 {
+#fancycarousel #fc-grid-item #fc-1 {
   background-image: url("../img/fancy/owl.jpg");
 }
-#fancycarousel #fb-grid-item #fc-2 {
+#fancycarousel #fc-grid-item #fc-2 {
   background-image: url("../img/fancy/deer.jpg");
 }
-#fancycarousel #fb-grid-item #fc-3 {
+#fancycarousel #fc-grid-item #fc-3 {
   background-image: url("../img/fancy/bear.jpg");
 }
-#fancycarousel #fb-grid-item #fc-4 {
+#fancycarousel #fc-grid-item #fc-4 {
   background-image: url("../img/fancy/wolf.jpg");
+}
+
+/* ==========
+    AOS
+=========== */
+#aos {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 16px auto 16px;
+  grid-template-columns: 16px auto 16px;
+      grid-template-areas: ". aos .";
+  margin: 30px 0;
+}
+@media (min-width: 768px) {
+  #aos {
+    margin: 100px 0;
+  }
+}
+@media (min-width: 1200px) {
+  #aos {
+    -ms-grid-columns: auto 1200px auto;
+    grid-template-columns: auto 1200px auto;
+  }
+}
+#aos #aos-grid-item {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: aos;
+}
+#aos #aos-grid-item .item {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-size: cover;
+  background-position: center;
+}
+#aos #aos-grid-item .item img {
+  width: 100%;
 }

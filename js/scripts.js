@@ -1,5 +1,9 @@
 Fancybox.bind();
 
+AOS.init({
+    duration: 3000,
+});
+
 // const container = document.getElementById("myCarousel");
 const container = document.querySelector("#myCarousel");
 
