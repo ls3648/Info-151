@@ -21,6 +21,15 @@
         padding: 24px;
         box-sizing: border-box;
         border-radius: 8px;
+        width: 90vw;
+
+        @include md{
+            width: 65vw;
+        }
+
+        @include xl{
+            width: 50vw;
+        }
         
         input{
             width: 100%;

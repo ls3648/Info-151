@@ -767,6 +767,17 @@ header #mainNav {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 8px;
+  width: 90vw;
+}
+@media (min-width: 768px) {
+  #sign-up-container form {
+    width: 65vw;
+  }
+}
+@media (min-width: 1200px) {
+  #sign-up-container form {
+    width: 50vw;
+  }
 }
 #sign-up-container form input {
   width: 100%;
